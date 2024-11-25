@@ -1,0 +1,24 @@
+2.1 SELECT Statement
+The SELECT statement is used to retrieve data from a database.
+
+Example:
+SELECT FirstName, LastName, Department FROM Employees;
+
+This query retrieves the 
+FirstName, LastName, and Department columns from the Employees table.
+
+2.2 Filtering Data with WHERE
+You can filter records using the WHERE clause.
+
+Example:
+SELECT * FROM Employees WHERE Department = 'HR';
+
+This retrieves all employees from the HR department.
+
+2.3 Sorting Data with ORDER BY
+The ORDER BY clause is used to sort the result set.
+
+Example:
+SELECT * FROM Employees ORDER BY Salary DESC;
+
+This retrieves all employees sorted by salary in descending order.
