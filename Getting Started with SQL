@@ -1,0 +1,32 @@
+1.1 SQL Basics
+SQL is used for creating, managing, and manipulating databases. The core operations are:
+
+  SELECT: Retrieve data from a database.
+  INSERT: Add new data into a table.
+  UPDATE: Modify existing data in a table.
+  DELETE: Remove data from a table.
+
+1.2 Creating Tables
+You can create a table using the CREATE TABLE statement.
+
+Example:
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50),
+    Salary DECIMAL(10, 2)
+);
+
+This creates a table named Employees with columns 
+EmployeeID, FirstName, LastName, Department, and Salary.
+
+1.3 Inserting Data
+The INSERT INTO statement is used to insert data into the table.
+
+Example:
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department, Salary)
+VALUES (1, 'John', 'Doe', 'HR', 50000),
+       (2, 'Jane', 'Smith', 'Finance', 60000);
+
+This inserts two rows into the Employees table.
