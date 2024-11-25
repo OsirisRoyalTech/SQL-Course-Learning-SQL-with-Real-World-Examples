@@ -1,0 +1,40 @@
+Getting Started with SQL
+  SQL Basics
+  Creating Tables
+  Inserting Data
+
+Retrieving Data
+  SELECT Statement
+  Filtering Data with WHERE
+  Sorting Data with ORDER BY
+
+Aggregate Functions
+  COUNT, SUM, AVG, MIN, MAX
+  Grouping Data with GROUP BY
+
+Advanced Filtering
+  BETWEEN, IN, LIKE, IS NULL
+  Combining Conditions with AND, OR
+
+Joining Tables
+  Inner Join
+  Left Join
+  Right Join
+  Full Join
+
+Subqueries
+  Using Subqueries in SELECT
+  Subqueries with EXISTS, IN, and NOT IN
+
+Updating and Deleting Data
+  UPDATE Statement
+  DELETE Statement
+
+Modifying Table Structure
+  ALTER TABLE
+  Adding Constraints
+
+Real-World Examples
+  Sales Reporting
+  Customer Analysis
+  Inventory Management
