@@ -1,0 +1,20 @@
+3.1 COUNT, SUM, AVG, MIN, MAX
+SQL provides aggregate functions to perform calculations on data.
+•	COUNT(): Returns the number of rows.
+•	SUM(): Returns the sum of a numeric column.
+•	AVG(): Returns the average value of a numeric column.
+•	MIN(): Returns the minimum value of a column.
+•	MAX(): Returns the maximum value of a column.
+
+Example:
+  SELECT COUNT(*), AVG(Salary), MAX(Salary) FROM Employees;
+
+This query returns the total number of employees, the average salary, and the highest salary.
+
+3.2 Grouping Data with GROUP BY
+The GROUP BY clause groups rows that have the same values into summary rows.
+
+Example:
+  SELECT Department, AVG(Salary) FROM Employees GROUP BY Department;
+
+This query returns the average salary per department.
