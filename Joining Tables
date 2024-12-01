@@ -1,0 +1,31 @@
+5.1 Inner Join
+An INNER JOIN returns records that have matching values in both tables.
+
+Example:
+  SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+  FROM Employees
+  INNER JOIN Departments ON Employees.Department = Departments.DepartmentID;
+
+5.2 Left Join
+A LEFT JOIN returns all records from the left table, and the matched records from the right table.
+
+Example:
+  SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+  FROM Employees
+  LEFT JOIN Departments ON Employees.Department = Departments.DepartmentID;
+
+5.3 Right Join
+A RIGHT JOIN returns all records from the right table, and the matched records from the left table.
+
+Example:
+  SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+  FROM Employees
+  RIGHT JOIN Departments ON Employees.Department = Departments.DepartmentID;
+
+5.4 Full Join
+A FULL JOIN returns all records when there is a match in either the left or right table.
+
+Example:
+  SELECT Employees.FirstName, Employees.LastName, Departments.DepartmentName
+  FROM Employees
+  FULL JOIN Departments ON Employees.Department = Departments.DepartmentID;
