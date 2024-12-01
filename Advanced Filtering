@@ -1,0 +1,24 @@
+4.1 BETWEEN, IN, LIKE, IS NULL
+You can refine queries with advanced filters:
+•	BETWEEN: Filters data within a range.
+•	IN: Filters data that matches any of the specified values.
+•	LIKE: Filters data using pattern matching.
+•	IS NULL: Filters data for NULL values.
+
+Examples:
+-- BETWEEN
+  SELECT * FROM Employees WHERE Salary BETWEEN 50000 AND 60000;
+
+-- IN
+  SELECT * FROM Employees WHERE Department IN ('HR', 'Finance');
+
+-- LIKE
+  SELECT * FROM Employees WHERE FirstName LIKE 'J%';
+
+-- IS NULL
+SELECT * FROM Employees WHERE Department IS NULL;
+4.2 Combining Conditions with AND, OR
+You can combine multiple conditions using AND and OR.
+
+Example:
+  SELECT * FROM Employees WHERE Department = 'HR' AND Salary > 50000;
