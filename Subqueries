@@ -1,0 +1,23 @@
+6.1 Using Subqueries in SELECT
+Subqueries are queries within queries. A subquery can return a single value, a list of values, or a table.
+
+Example:
+  SELECT FirstName, LastName
+  FROM Employees
+  WHERE Salary > (SELECT AVG(Salary) FROM Employees);
+
+This retrieves employees whose salary is greater than the average salary.
+
+6.2 Subqueries with EXISTS, IN, and NOT IN
+•	EXISTS: Checks for the existence of rows returned by the subquery.
+•	IN: Filters based on values returned by the subquery.
+•	NOT IN: Filters out values returned by the subquery.
+
+Example:
+-- Using EXISTS
+  SELECT FirstName, LastName
+  FROM Employees
+  WHERE EXISTS (SELECT * FROM Departments WHERE Departments.DepartmentID = Employees.Department);
+
+-- Using IN
+  SELECT * FROM Employees WHERE Department IN (SELECT DepartmentID FROM Departments WHERE DepartmentName = 'HR');
